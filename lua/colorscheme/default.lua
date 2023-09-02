@@ -1,3 +1,3 @@
-local default_scheme = "rose-pine"
+local default_scheme = "tokyonight-night"
 
 vim.cmd.colorscheme(default_scheme)

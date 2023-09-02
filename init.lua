@@ -1,4 +1,5 @@
-require("mappings")
-require("plugin")
-require("fuzzy")
+require("plugins")
 require("colorscheme.default")
+require("lsp")
+require("mappings")
+require("treesiter")
