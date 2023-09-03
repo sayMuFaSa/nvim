@@ -76,6 +76,13 @@ return packer.startup(function(use)
 
 	use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
 
+	use {'decaycs/decay.nvim', as = 'decay'}
+
+	use {'frenzyexists/aquarium-vim', as = 'aquarium'}
+
+	use {"rebelot/kanagawa.nvim", as = 'kanagawa'}
+
+
 
 if PACKER_BOOTSTRAP then
 	require("packer").sync()
