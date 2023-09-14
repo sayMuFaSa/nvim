@@ -15,5 +15,7 @@ vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
 vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, {})
 
+vim.keymap.set('n', "<leader>t", vim.cmd.FloatermNew)
+
 
 

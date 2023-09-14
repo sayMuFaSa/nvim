@@ -1,3 +1,4 @@
+require("lsp.mason")
 local lsp = require('lsp-zero')
 
 lsp.preset("recommended")
@@ -6,8 +7,8 @@ local cmp = require("cmp")
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 
 local cmp_mappings = lsp.defaults.cmp_mappings({
-	["<A-J>"] = cmp.mapping.select_next_item(cmp_select),
-	["<A-K>"] = cmp.mapping.select_prev_item(cmp_select),
+	["<C-J>"] = cmp.mapping.select_next_item(cmp_select),
+	["<C-K>"] = cmp.mapping.select_prev_item(cmp_select),
 	["<Tab>"] = cmp.mapping.confirm({ select = false }),
 })
 
