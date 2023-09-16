@@ -52,6 +52,12 @@ return require('packer').startup(function(use)
 
 	use 'voldikss/vim-floaterm'
 
+	use {
+		"windwp/nvim-autopairs",
+		config = function() require("nvim-autopairs").setup {} end
+	}
+
+
 
 
 
