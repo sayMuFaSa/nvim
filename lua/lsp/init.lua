@@ -7,9 +7,9 @@ local cmp = require("cmp")
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 
 local cmp_mappings = lsp.defaults.cmp_mappings({
-	["<Tab>"] = cmp.mapping.select_next_item(cmp_select),
-	["<A-u>"] = cmp.mapping.select_prev_item(cmp_select),
-	["<A-y>"] = cmp.mapping.confirm({ select = false }),
+	["<A-f>"] = cmp.mapping.select_next_item(cmp_select),
+	["<A-d>"] = cmp.mapping.select_prev_item(cmp_select),
+	["<Tab>"] = cmp.mapping.confirm({ select = false }),
 })
 
 lsp.setup_nvim_cmp({

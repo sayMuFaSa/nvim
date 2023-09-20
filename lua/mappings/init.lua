@@ -17,7 +17,7 @@ vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, {})
 
 vim.keymap.set('n', "<leader>t", vim.cmd.FloatermNew)
 
-vim.api.nvim_set_keymap('n', ' q', '<cmd>w | cq 2<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', ' z', '<cmd>w | cq 2<CR>', { noremap = true, silent = true})
 
-
+vim.api.nvim_set_keymap('n', ' q', '<cmd>cq 2<CR>', { noremap = true, silent = true})
 
