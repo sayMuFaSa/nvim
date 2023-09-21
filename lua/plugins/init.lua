@@ -47,7 +47,12 @@ return require('packer').startup(function(use)
 	}
 
 	use 'voldikss/vim-floaterm'
-
+use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+}
 	use {
 		"windwp/nvim-autopairs",
 		config = function() require("nvim-autopairs").setup {} end
