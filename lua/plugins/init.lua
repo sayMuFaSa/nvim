@@ -60,8 +60,9 @@ use {
 
 	use 'Mofiqul/vscode.nvim'
 
+	use "VDuchauffour/neodark.nvim"
 
-
+	use "preservim/nerdtree"
 
 
 end)
