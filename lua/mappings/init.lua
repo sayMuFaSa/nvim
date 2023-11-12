@@ -25,3 +25,5 @@ vim.api.nvim_set_keymap('n', " n", "<cmd>NERDTree<CR>", { noremap = true, silent
 
 vim.api.nvim_set_keymap('n', " f", "<cmd>NERDTreeFocus<CR>", { noremap = true, silent = true })
 
+-- vim.api.nvim_set_keymap('n', " j", "<cmd>bel split | term<CR>", { noremap = true, silent = true })
+
