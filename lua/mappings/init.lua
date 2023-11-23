@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+vim.api.nvim_set_keymap('n', "<leader>e", "<cmd>NvimTreeToggle<CR>", {noremap = true, silent = true})
 
 -- vim.g.fzf_preview_window = { 'right:30%:wrap', 'ctrl-/:wrap' }
 
@@ -21,9 +21,7 @@ vim.api.nvim_set_keymap('n', ' z', '<cmd>w | cq 2<CR>', { noremap = true, silent
 
 vim.api.nvim_set_keymap('n', ' q', '<cmd>cq 2<CR>', { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap('n', " n", "<cmd>NERDTree<CR>", { noremap = true, silent = true })
-
-vim.api.nvim_set_keymap('n', " f", "<cmd>NERDTreeFocus<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', " l", "<cmd>Lf<CR>", {noremap = true, silent = true })
 
 -- vim.api.nvim_set_keymap('n', " j", "<cmd>bel split | term<CR>", { noremap = true, silent = true })
 

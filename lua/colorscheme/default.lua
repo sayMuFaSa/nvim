@@ -1,4 +1,4 @@
-local default_scheme = "tokyonight-night"
+local default_scheme = "neodark"
 
 vim.o.termguicolors = true
 
