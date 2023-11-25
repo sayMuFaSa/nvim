@@ -5,7 +5,6 @@ require("mappings")
 require("treesiter")
 require("comment")
 require("nvim_tree")
-
 vim.cmd(':set number')
 vim.cmd(':set relativenumber')
 vim.cmd(":set scrolloff=3")

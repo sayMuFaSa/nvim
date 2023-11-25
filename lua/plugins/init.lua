@@ -12,8 +12,6 @@ return require('packer').startup(function(use)
 	-- 	requires = {
 	-- 		-- LSP Support
 	-- 		{'neovim/nvim-lspconfig'},             -- Required
-	-- 		{'williamboman/mason.nvim'},           -- Optional
-	-- 		{'williamboman/mason-lspconfig.nvim'}, -- Optional
 	--
 	-- 		-- Autocompletion
 	-- 		{'hrsh7th/nvim-cmp'},     -- Required
@@ -26,8 +24,6 @@ return require('packer').startup(function(use)
 
 	use {'decaycs/decay.nvim', as = 'decay'}
 
-	use {'frenzyexists/aquarium-vim', as = 'aquarium'}
-
 	use {"rebelot/kanagawa.nvim", as = 'kanagawa'}
 
 	use { 'nvim-telescope/telescope.nvim', tag = '0.1.2',
@@ -35,12 +31,6 @@ return require('packer').startup(function(use)
 	requires = { {'nvim-lua/plenary.nvim'} }
 
 
-	}
-
-	use {
-		"williamboman/mason.nvim",
-		"williamboman/mason-lspconfig.nvim",
-		"neovim/nvim-lspconfig",
 	}
 
 
@@ -66,7 +56,6 @@ return require('packer').startup(function(use)
 	use 'nvim-tree/nvim-tree.lua'
 
 	use 'nvim-tree/nvim-web-devicons' -- install nerd-fonts package also 
-
 end)
 
 
