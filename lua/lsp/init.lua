@@ -1,3 +1,18 @@
+local lspconfig = require'lspconfig'
+lspconfig.clangd.setup {
+  -- init_options = {
+  --   compilationDatabaseDirectory = "build";
+  --   index = {
+  --     threads = 0;
+  --   };
+  --   clang = {
+  --     excludeArgs = { "-frounding-math"} ;
+  --   };
+  -- }
+}
+
+lspconfig.texlab.setup{}
+
 local lsp = require('lsp-zero')
 
 lsp.preset("recommended")

@@ -1,6 +1,6 @@
 require("plugins")
 require("colorscheme.default")
--- require("lsp")
+require("lsp")
 require("mappings")
 require("treesiter")
 require("comment")

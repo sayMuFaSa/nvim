@@ -6,19 +6,19 @@ return require('packer').startup(function(use)
 
 	use {"folke/tokyonight.nvim", as = "tokyonight" }
 
-	-- use {
-	-- 	'VonHeikemen/lsp-zero.nvim',
-	-- 	branch = 'v2.x',
-	-- 	requires = {
-	-- 		-- LSP Support
-	-- 		{'neovim/nvim-lspconfig'},             -- Required
-	--
-	-- 		-- Autocompletion
-	-- 		{'hrsh7th/nvim-cmp'},     -- Required
-	-- 		{'hrsh7th/cmp-nvim-lsp'}, -- Required
-	-- 		{'L3MON4D3/LuaSnip'},     -- Required
-	-- 	}
-	-- }
+	use {
+		'VonHeikemen/lsp-zero.nvim',
+		branch = 'v2.x',
+		requires = {
+			-- LSP Support
+			{'neovim/nvim-lspconfig'},             -- Required
+
+			-- Autocompletion
+			{'hrsh7th/nvim-cmp'},     -- Required
+			{'hrsh7th/cmp-nvim-lsp'}, -- Required
+			{'L3MON4D3/LuaSnip'},     -- Required
+		}
+	}
 
 	use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
 
