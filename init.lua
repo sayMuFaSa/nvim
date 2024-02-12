@@ -4,6 +4,7 @@ require('mappings')
 require('treesiter')
 require('comment')
 require('nvim_tree')
+require('toggle_term')
 
 
 local diffview = require('diffview')
@@ -33,11 +34,3 @@ vim.cmd('set shiftwidth=4')
 vim.cmd('set numberwidth=1')
 
 vim.cmd[[autocmd VimEnter,InsertEnter * set guicursor=n-v-c:block-Cursor]]
-
--- local argc = vim.fn.argc()
---
--- if argc == 0 then
--- 	local nvim_tree = require('nvim-tree.api')
--- 	nvim_tree.tree.toggle()
--- 	vim.cmd('close')
--- end

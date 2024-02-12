@@ -45,8 +45,6 @@ require('packer').startup(function(use)
 
 	use 'nvim-tree/nvim-tree.lua'
 
-	use 'nvim-tree/nvim-web-devicons' -- install nerd-fonts package also 
-
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.5',
 		-- or                            , branch = '0.1.x',
