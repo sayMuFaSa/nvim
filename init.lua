@@ -6,19 +6,12 @@ require('comment')
 require('nvim_tree')
 require('toggle_term')
 
-
 local diffview = require('diffview')
 local autopairs = require('nvim-autopairs')
 local default_scheme = 'neodark'
-local terminal = require('toggleterm')
 
 diffview.setup()
 autopairs.setup()
-terminal.setup({
-	open_mapping = '<c-Tab>',
-	insert_mappings = true,
-	terminal_mappings = true
-})
 
 
 vim.o.termguicolors = true

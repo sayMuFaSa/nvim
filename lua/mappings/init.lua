@@ -13,5 +13,3 @@ vim.api.nvim_set_keymap('n', '<leader>p', '"+p', { noremap = true, silent = true
 
 -- window
 vim.api.nvim_set_keymap('n', '<leader>w', '<C-w>', { noremap = true, silent = true })
-
-vim.api.nvim_set_keymap('n', '<leader>t', '<cmd>ToggleTerm<CR>', { noremap = true, silent = true })

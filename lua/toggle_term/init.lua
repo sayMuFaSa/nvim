@@ -1,5 +1,6 @@
-require('toggleterm').setup{
-	open_mapping = ' t',
-	direction = 'float',
-	insert_mappings = false
-}
+require('toggleterm').setup({
+	open_mapping = '<c-t>',
+	insert_mappings = false,
+	terminal_mappings = true,
+	direction = 'float'
+})
