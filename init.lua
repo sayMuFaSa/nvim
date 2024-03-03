@@ -1,5 +1,4 @@
 require('plugins')
-require('lsp')
 require('mappings')
 require('treesiter')
 require('comment')
@@ -10,9 +9,14 @@ local diffview = require('diffview')
 local autopairs = require('nvim-autopairs')
 local default_scheme = 'neodark'
 
+function Lsp_start()
+	require('lsp')
+end
+
+vim.cmd(':command Lsp lua Lsp_start()')
+
 diffview.setup()
 autopairs.setup()
-
 
 vim.o.termguicolors = true
 vim.cmd.colorscheme(default_scheme)
