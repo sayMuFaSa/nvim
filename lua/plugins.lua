@@ -35,6 +35,7 @@ require('packer').startup(function(use)
 	use 'Mofiqul/dracula.nvim'
 	use 'AxelGard/oneokai.nvim'
 	use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
+	use { "ellisonleao/gruvbox.nvim" }
 	---------------------------------------------------------------	
 
 	use 'akinsho/toggleterm.nvim'
